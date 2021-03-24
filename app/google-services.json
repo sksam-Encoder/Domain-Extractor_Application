@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "698841399344",
+    "project_id": "domainextractor-a3a21",
+    "storage_bucket": "domainextractor-a3a21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698841399344:android:b9123e664dff7daebb2df5",
+        "android_client_info": {
+          "package_name": "com.example.domainextractor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "698841399344-ie44qbgm0dsfo5ta0ksmsem5pjm9k7gh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGR6jk6LAF2TSPq8N63K9VrU1DuTMDr3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "698841399344-ie44qbgm0dsfo5ta0ksmsem5pjm9k7gh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

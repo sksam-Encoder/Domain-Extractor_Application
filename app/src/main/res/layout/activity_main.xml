@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_awesome_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200"
+        android:minHeight="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/toolbarback"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_chevron_left_24"
+            android:textColor="#fff"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:text="Login"
+            android:visibility="gone"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/toolbarcontent"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?attr/selectableItemBackground"
+            android:text=""
+
+            android:textColor="#fff" />
+        <EditText
+            android:id="@+id/edt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="start"
+            android:visibility="gone"
+            android:textColorHint="@color/white"
+            android:backgroundTint="@color/purple_200"
+            android:textColor="@color/white"
+            android:hint="Search Any Domain" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_search_24"
+            android:layout_gravity="end"
+            android:id="@+id/logo"
+            android:layout_marginHorizontal="10dp"
+            android:visibility="invisible"
+
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/customnav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_awesome_toolbar">
+
+        <TextView
+            android:id="@+id/firstnav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:paddingVertical="15dp"
+            android:text="Domain"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/secondnav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:paddingVertical="15dp"
+            android:text="Server"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/thirdnav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:paddingVertical="15dp"
+            android:text="Api"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/fourthnav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:paddingVertical="15dp"
+            android:text="Project"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <!--search bar-->
+
+    <LinearLayout
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/customnav"
+        android:orientation="vertical">
+
+        <!--    <View-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="1dp"-->
+        <!--        android:background="#000" />-->
+
+
+        <!--    <View-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="1dp"-->
+        <!--        android:layout_below="@+id/edt"-->
+        <!--        android:background="#000" />-->
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/clear"
+        android:layout_width="86dp"
+        android:layout_height="54dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="15dp"
+        android:src="@drawable/ic_baseline_close_24"
+        android:background="@color/purple_200"
+        android:tint="@color/white"
+        android:visibility="invisible" />
+    <!--search bar-->
+
+
+    <FrameLayout
+        android:id="@+id/chipMainFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search"
+        android:layout_above="@+id/Navigation"
+        android:layout_marginTop="-1dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+        <com.ismaeldivita.chipnavigation.ChipNavigationBar
+            android:id="@+id/Navigation"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_alignParentBottom="true"
+            app:cnb_menuResource="@menu/menu" />
+
+
+
+</RelativeLayout>
+
+

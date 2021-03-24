@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+
+    android:orientation="vertical"
+    tools:context=".DetailFragments.RenewFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1.5"
+        android:textAlignment="center"
+        android:text="Review Chart"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_margin="10dp"
+            android:id="@+id/close"
+            android:src="@drawable/ic_baseline_close_24"
+            android:layout_weight="0.5"
+            />
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="5dp"
+        android:background="#fff" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:text="Tap to Change"
+        android:textColor="@color/grey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sample1.com"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="$20.5"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/whois"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:text="WhoisGuard:"
+            android:textColor="@color/grey"
+            android:textSize="15sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:paddingHorizontal="6dp"
+            android:text="On"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+
+
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:text="1 Year"
+            android:textColor="@color/grey"
+            android:textSize="15sp"
+
+            />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="5dp"
+        android:background="#fff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp">
+
+
+        <TextView
+            android:id="@+id/subTot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="5dp"
+            android:text="SubTotal"
+            android:textColor="@color/grey"
+            android:textSize="15sp"
+
+            />
+
+        <TextView
+            android:id="@+id/subPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="5dp"
+            android:text="$12.02"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+
+            />
+
+        <TextView
+            android:id="@+id/ICA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subTot"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="5dp"
+            android:text="ICANN fee"
+            android:textColor="@color/grey"
+            android:textSize="15sp"
+
+            />
+
+        <TextView
+            android:id="@+id/ICAprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subPrice"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="5dp"
+            android:text="$12.02"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+
+            />
+
+        <TextView
+            android:id="@+id/Total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ICAprice"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="5dp"
+            android:text="$12.02"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/TotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Total"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="5dp"
+            android:text="INR"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/INRfee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Total"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="5dp"
+            android:text="915.60"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Total"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="5dp"
+        android:text="@string/data"
+        android:textColor="@color/grey"
+        android:layout_marginLeft="90dp"
+        android:textSize="15sp"
+        android:textStyle="normal"
+
+        />    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Total"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="5dp"
+        android:text="@string/data1"
+        android:textColor="@color/grey"
+        android:layout_marginLeft="90dp"
+        android:textSize="15sp"
+        android:textStyle="normal"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Ltgrey"
+        android:textColor="@color/white"
+        android:layout_gravity="end"
+        android:layout_marginHorizontal="40dp"
+        android:text="Coupon Code?" />
+
+
+</LinearLayout>

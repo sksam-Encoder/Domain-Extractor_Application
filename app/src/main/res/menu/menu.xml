@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"
+        app:cnb_backgroundColor="@color/purple_200"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff"
+
+        />
+    <item
+        android:id="@+id/Search"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="Search"
+        app:cnb_backgroundColor="@color/purple_200"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff"
+        />
+    <item
+        android:id="@+id/WishList"
+        android:icon="@drawable/ic_baseline_shop_two_24"
+        android:title="WishList"
+        app:cnb_backgroundColor="@color/purple_200"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff"
+        />
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Settings"
+        app:cnb_backgroundColor="@color/purple_200"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff"
+        />
+</menu>

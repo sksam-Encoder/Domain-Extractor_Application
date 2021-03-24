@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Chipfragment.Chip_SearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wait"
+        android:id="@+id/wait"
+        android:textSize="20sp"
+        android:layout_above="@+id/progressBar2"
+        android:textColor="@color/teal_700"
+        android:layout_centerHorizontal="true"
+
+
+        />
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/teal_700"
+        android:layout_height="wrap_content" />
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/FragmentSearchListView"
+
+
+
+        >
+
+
+    </ListView>
+
+
+
+
+
+
+
+
+</RelativeLayout>
